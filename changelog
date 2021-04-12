@@ -1,0 +1,20 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.1] - 2021-04-12
+### Fixed
+- Documentation
+	- Table 1 was missing the x+y in the function example
+	- Table 1 was showing the wrong renders
+
+## [1.0.0] - 2021-04-01
+### Added
+- Parentheses
+- Brackets
+- Braces
+- Angle brackets
+- Pipes
+- Double pipes

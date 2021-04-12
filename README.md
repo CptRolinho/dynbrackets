@@ -1,7 +1,7 @@
 # dynbrackets
 LaTeX package that implements commands to simplify the syntax of calling dynamic math brackets
 
-Version: v1.0.0
+Version: v1.0.1
 
 Copyright (c) 2021 Miguel R. Clemente <miguel.clemente@dem.uc.pt>
 

@@ -26,12 +26,12 @@
 %<package>\NeedsTeXFormat{LaTeX2e}[2005/12/01]
 %<package>\ProvidesPackage{dynbrackets}
 %<*package>
-    [2021/04/01 v1.0.0 Simplifies the syntax of calling dynamic math brackets]
+    [2021/04/01 v1.0.1 Simplifies the syntax of calling dynamic math brackets]
 %</package>
 %
 %<*driver>
 \documentclass{ltxdoc}
-\usepackage{dynbrackets}[2021/04/01]
+\usepackage{dynbrackets}[2021/04/12]
 \usepackage{amsmath}
 \usepackage{indentfirst}
 \usepackage{booktabs}
@@ -64,7 +64,7 @@
 %   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %   Right brace   \}     Tilde         \~}
 %
-%
+% \changes{v1.0.1}{2021/04/12}{Minor fixes to documentation}
 % \changes{v1.0.0}{2021/04/01}{Public release}
 %
 % \DoNotIndex{\newcommand,\newenvironment}
@@ -97,12 +97,12 @@
 % \toprule
 % \toprule
 % \textbf{Type} & \textbf{\LaTeX} & \verb!dynbrackets! & \textbf{Renders as} \\ \midrule
-% Parentheses; round brackets & \verb!( x+y )! & \verb!\dbr{}! & $( x+y )$ \\
-% Brackets; square brackets   & \verb![ x+y ]! & \verb!\dbs{}! & $[ x+y ]$ \\
-% Braces; curly brackets      & \verb!\{ x+y\}! & \verb!\dbc{}! & $\{ x+y \}$ \\
-% Angle brackets              & \verb!\langle x+y \rangle! & \verb!\dba{}! & $\langle x+y \rangle$ \\
-% Pipes; vertical bars        & \verb!| x+y |! & \verb!\dbp{}! & $| x+y |$ \\
-% Double pipes                & \verb!\| x+y \|! & \verb!\dbdp{}! & $\| x+y \|$\\  \bottomrule
+% Parentheses; round brackets & \verb!( x+y )! & \verb!\dbr{x+y}! & \dbr{x+y} \\
+% Brackets; square brackets   & \verb![ x+y ]! & \verb!\dbs{x+y}! & \dbs{x+y} \\
+% Braces; curly brackets      & \verb!\{ x+y\}! & \verb!\dbc{x+y}! & \dbc{x+y} \\
+% Angle brackets              & \verb!\langle x+y \rangle! & \verb!\dba{x+y}! & \dba{x+y} \\
+% Pipes; vertical bars        & \verb!| x+y |! & \verb!\dbp{x+y}! & \dbp{x+y} \\
+% Double pipes                & \verb!\| x+y \|! & \verb!\dbdp{x+y}! & \dbdp{x+y} \\  \bottomrule
 % \bottomrule
 % \end{tabular}
 % \end{table}
@@ -118,7 +118,7 @@
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{dynbrackets}
-[2021/04/01 v1.0.0 Simplifies the syntax of calling dynamic math brackets]
+[2021/04/12 v1.0.1 Simplifies the syntax of calling dynamic math brackets]
 %    \end{macrocode}
 %
 % \begin{macro}{\dbr}
